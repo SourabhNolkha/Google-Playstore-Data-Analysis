@@ -1,0 +1,3217 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20221.22.0415.1144                               -->
+<workbook original-version='18.1' source-build='2022.1.1 (20221.22.0415.1144)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <repository-location id='GooglePlaystoreanalysis' path='/workbooks' revision='1.2' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='GooglePlaystore2' inline='true' name='federated.17xda7j1i2eocc1bm64121mp5hxx' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='GooglePlaystore2' name='textscan.0sxb1xa1nbkgjh14hf85a0aehy7j'>
+            <connection class='textscan' directory='C:/Users/soura/OneDrive/Documents/Datasets' filename='GooglePlaystore2.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0sxb1xa1nbkgjh14hf85a0aehy7j' name='GooglePlaystore2.csv' table='[GooglePlaystore2#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='string' name='App Name' ordinal='1' />
+            <column datatype='string' name='Developer Id' ordinal='2' />
+            <column datatype='date' name='Released' ordinal='3' />
+            <column datatype='date' name='Last Updated' ordinal='4' />
+            <column datatype='string' name='Category' ordinal='5' />
+            <column datatype='string' name='Content Rating' ordinal='6' />
+            <column datatype='real' name='Rating' ordinal='7' />
+            <column datatype='real' name='Rating Count' ordinal='8' />
+            <column datatype='integer' name='Maximum Installs' ordinal='9' />
+            <column datatype='string' name='Minimum Android' ordinal='10' />
+            <column datatype='real' name='Size(in mb)' ordinal='11' />
+            <column datatype='real' name='Price(in USD)' ordinal='12' />
+            <column datatype='boolean' name='Free' ordinal='13' />
+            <column datatype='boolean' name='Ad Supported' ordinal='14' />
+            <column datatype='boolean' name='In App Purchases' ordinal='15' />
+            <column datatype='boolean' name='Editors Choice' ordinal='16' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0sxb1xa1nbkgjh14hf85a0aehy7j' name='GooglePlaystore2.csv' table='[GooglePlaystore2#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='string' name='App Name' ordinal='1' />
+            <column datatype='string' name='Developer Id' ordinal='2' />
+            <column datatype='date' name='Released' ordinal='3' />
+            <column datatype='date' name='Last Updated' ordinal='4' />
+            <column datatype='string' name='Category' ordinal='5' />
+            <column datatype='string' name='Content Rating' ordinal='6' />
+            <column datatype='real' name='Rating' ordinal='7' />
+            <column datatype='real' name='Rating Count' ordinal='8' />
+            <column datatype='integer' name='Maximum Installs' ordinal='9' />
+            <column datatype='string' name='Minimum Android' ordinal='10' />
+            <column datatype='real' name='Size(in mb)' ordinal='11' />
+            <column datatype='real' name='Price(in USD)' ordinal='12' />
+            <column datatype='boolean' name='Free' ordinal='13' />
+            <column datatype='boolean' name='Ad Supported' ordinal='14' />
+            <column datatype='boolean' name='In App Purchases' ordinal='15' />
+            <column datatype='boolean' name='Editors Choice' ordinal='16' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <refresh increment-key='' incremental-updates='false' />
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[GooglePlaystore2.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[GooglePlaystore2.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[GooglePlaystore2.csv_C55DEC8211194F338EAC73780877F42C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>App Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[App Name]</local-name>
+            <parent-name>[GooglePlaystore2.csv]</parent-name>
+            <remote-alias>App Name</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[GooglePlaystore2.csv_C55DEC8211194F338EAC73780877F42C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Developer Id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Developer Id]</local-name>
+            <parent-name>[GooglePlaystore2.csv]</parent-name>
+            <remote-alias>Developer Id</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[GooglePlaystore2.csv_C55DEC8211194F338EAC73780877F42C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Released</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Released]</local-name>
+            <parent-name>[GooglePlaystore2.csv]</parent-name>
+            <remote-alias>Released</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[GooglePlaystore2.csv_C55DEC8211194F338EAC73780877F42C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Last Updated</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Last Updated]</local-name>
+            <parent-name>[GooglePlaystore2.csv]</parent-name>
+            <remote-alias>Last Updated</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[GooglePlaystore2.csv_C55DEC8211194F338EAC73780877F42C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Category</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Category]</local-name>
+            <parent-name>[GooglePlaystore2.csv]</parent-name>
+            <remote-alias>Category</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[GooglePlaystore2.csv_C55DEC8211194F338EAC73780877F42C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Content Rating</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Content Rating]</local-name>
+            <parent-name>[GooglePlaystore2.csv]</parent-name>
+            <remote-alias>Content Rating</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[GooglePlaystore2.csv_C55DEC8211194F338EAC73780877F42C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Rating</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Rating]</local-name>
+            <parent-name>[GooglePlaystore2.csv]</parent-name>
+            <remote-alias>Rating</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[GooglePlaystore2.csv_C55DEC8211194F338EAC73780877F42C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Rating Count</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Rating Count]</local-name>
+            <parent-name>[GooglePlaystore2.csv]</parent-name>
+            <remote-alias>Rating Count</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[GooglePlaystore2.csv_C55DEC8211194F338EAC73780877F42C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Maximum Installs</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Maximum Installs]</local-name>
+            <parent-name>[GooglePlaystore2.csv]</parent-name>
+            <remote-alias>Maximum Installs</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[GooglePlaystore2.csv_C55DEC8211194F338EAC73780877F42C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Minimum Android</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Minimum Android]</local-name>
+            <parent-name>[GooglePlaystore2.csv]</parent-name>
+            <remote-alias>Minimum Android</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[GooglePlaystore2.csv_C55DEC8211194F338EAC73780877F42C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Size(in mb)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Size(in mb)]</local-name>
+            <parent-name>[GooglePlaystore2.csv]</parent-name>
+            <remote-alias>Size(in mb)</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[GooglePlaystore2.csv_C55DEC8211194F338EAC73780877F42C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Price(in USD)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Price(in USD)]</local-name>
+            <parent-name>[GooglePlaystore2.csv]</parent-name>
+            <remote-alias>Price(in USD)</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[GooglePlaystore2.csv_C55DEC8211194F338EAC73780877F42C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Free</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[Free]</local-name>
+            <parent-name>[GooglePlaystore2.csv]</parent-name>
+            <remote-alias>Free</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[GooglePlaystore2.csv_C55DEC8211194F338EAC73780877F42C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Ad Supported</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[Ad Supported]</local-name>
+            <parent-name>[GooglePlaystore2.csv]</parent-name>
+            <remote-alias>Ad Supported</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[GooglePlaystore2.csv_C55DEC8211194F338EAC73780877F42C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>In App Purchases</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[In App Purchases]</local-name>
+            <parent-name>[GooglePlaystore2.csv]</parent-name>
+            <remote-alias>In App Purchases</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[GooglePlaystore2.csv_C55DEC8211194F338EAC73780877F42C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Editors Choice</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[Editors Choice]</local-name>
+            <parent-name>[GooglePlaystore2.csv]</parent-name>
+            <remote-alias>Editors Choice</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[GooglePlaystore2.csv_C55DEC8211194F338EAC73780877F42C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column aggregation='CountD' datatype='string' name='[App Name]' role='dimension' type='nominal' />
+      <column caption='Price Bins Calculated' datatype='string' name='[Calculation_1065664303103238144]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='if [Price(in USD)]&lt;1 then &quot;&lt;1&quot;&#13;&#10;ELSEIF  [Price(in USD)]&gt;=1 and [Price(in USD)]&lt;5 then &quot;&gt;=1 and &lt;5&quot;&#13;&#10;ELSEIF  [Price(in USD)]&gt;=5 and [Price(in USD)]&lt;10 then &quot;&gt;=5 and &lt;10&quot;&#13;&#10;ELSEIF  [Price(in USD)]&gt;=10 and [Price(in USD)]&lt;50 then &quot;&gt;=10 and &lt;50&quot;&#13;&#10;elseif [Price(in USD)]&gt;=50 and [Price(in USD)]&lt;100 then &quot;&gt;=50 and &lt;100&quot;&#13;&#10;elseif [Price(in USD)]&gt;=100 then &quot;&gt;=100&quot; &#13;&#10;end' />
+        <aliases>
+          <alias key='&quot;&gt;=1 and &lt;5&quot;' value='1-5' />
+          <alias key='&quot;&gt;=10 and &lt;50&quot;' value='10-50' />
+          <alias key='&quot;&gt;=5 and &lt;10&quot;' value='5-10' />
+          <alias key='&quot;&gt;=50 and &lt;100&quot;' value='50-100' />
+        </aliases>
+      </column>
+      <column caption='Editor&apos;s Choice Calc.' datatype='integer' name='[Calculation_1065664303370670081]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='if[Editors Choice]= TRUE then 1&#13;&#10;else 0 end' />
+      </column>
+      <column caption='Rank for each category' datatype='integer' name='[Calculation_1113233573055868928]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='rank(max([Maximum Installs]))'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column caption='Calculation1' datatype='integer' name='[Calculation_661747711125520384]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='0' />
+      </column>
+      <column caption='Calculated  Size Bins' datatype='string' name='[Calculation_661747711163039745]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='if [Size(in mb)]&lt; 1 then &quot;&lt;1&quot; &#13;&#10;ELSEIF  [Size(in mb)]&gt;=1 and [Size(in mb)]&lt;10 then &quot;&gt;=1 and &lt;10&quot;&#13;&#10;ELSEIF  [Size(in mb)]&gt;=10 and [Size(in mb)]&lt;25 then &quot;&gt;=10 and &lt;25&quot;&#13;&#10;ELSEIF  [Size(in mb)]&gt;=25 and [Size(in mb)]&lt;50 then &quot;&gt;=25 and &lt;50&quot;&#13;&#10;ELSEIF  [Size(in mb)]&gt;=50 and [Size(in mb)]&lt;75 then &quot;&gt;=50 and &lt;75&quot;&#13;&#10;ELSEIF  [Size(in mb)]&gt;=75 and [Size(in mb)]&lt;100 then &quot;&gt;=75 and &lt;100&quot;&#13;&#10;ELSEIF  [Size(in mb)]&gt;=100 then &quot;&gt;=100&quot; end' />
+        <aliases>
+          <alias key='&quot;&gt;=1 and &lt;10&quot;' value='1-10' />
+          <alias key='&quot;&gt;=10 and &lt;25&quot;' value='10-25' />
+          <alias key='&quot;&gt;=25 and &lt;50&quot;' value='25-50' />
+          <alias key='&quot;&gt;=50 and &lt;75&quot;' value='50-75' />
+          <alias key='&quot;&gt;=75 and &lt;100&quot;' value='75-100' />
+        </aliases>
+      </column>
+      <column datatype='string' name='[Category (group)]' role='dimension' type='nominal'>
+        <calculation class='categorical-bin' column='[Category]' new-bin='true'>
+          <bin default-name='true' value='&quot;Business &amp; Finance&quot;'>
+            <value>&quot;Business&quot;</value>
+            <value>&quot;Finance&quot;</value>
+          </bin>
+          <bin default-name='false' value='&quot;Education&quot;'>
+            <value>&quot;Books &amp; Reference&quot;</value>
+            <value>&quot;Books &amp; Reference,Entertainment&quot;</value>
+            <value>&quot;Books &amp; Reference,Libraries &amp; Demo&quot;</value>
+            <value>&quot;Comics&quot;</value>
+            <value>&quot;Education&quot;</value>
+            <value>&quot;Education,Books &amp; Reference&quot;</value>
+            <value>&quot;Education,Entertainment&quot;</value>
+            <value>&quot;Educational&quot;</value>
+            <value>&quot;Entertainment,Books &amp; Reference&quot;</value>
+            <value>&quot;Libraries &amp; Demo&quot;</value>
+            <value>&quot;News &amp; Magazines&quot;</value>
+          </bin>
+          <bin default-name='false' value='&quot;Games&quot;'>
+            <value>&quot;Action&quot;</value>
+            <value>&quot;Adventure&quot;</value>
+            <value>&quot;Arcade&quot;</value>
+            <value>&quot;Board&quot;</value>
+            <value>&quot;Card&quot;</value>
+            <value>&quot;Casino&quot;</value>
+            <value>&quot;Puzzle&quot;</value>
+            <value>&quot;Puzzle,Travel &amp; Local&quot;</value>
+            <value>&quot;Racing&quot;</value>
+            <value>&quot;Role Playing&quot;</value>
+            <value>&quot;Simulation&quot;</value>
+            <value>&quot;Sports&quot;</value>
+            <value>&quot;Strategy&quot;</value>
+            <value>&quot;Trivia&quot;</value>
+            <value>&quot;Word&quot;</value>
+          </bin>
+          <bin default-name='false' value='&quot;Lifestyle&quot;'>
+            <value>&quot;Beauty&quot;</value>
+            <value>&quot;Casual&quot;</value>
+            <value>&quot;Dating&quot;</value>
+            <value>&quot;Entertainment&quot;</value>
+            <value>&quot;Events&quot;</value>
+            <value>&quot;Food &amp; Drink&quot;</value>
+            <value>&quot;Food &amp; Drink,Art &amp; Design&quot;</value>
+            <value>&quot;Food &amp; Drink,Puzzle&quot;</value>
+            <value>&quot;Health &amp; Fitness&quot;</value>
+            <value>&quot;House &amp; Home&quot;</value>
+            <value>&quot;Lifestyle&quot;</value>
+            <value>&quot;Lifestyle,Music &amp; Audio&quot;</value>
+            <value>&quot;Medical&quot;</value>
+            <value>&quot;Parenting&quot;</value>
+            <value>&quot;Personalization&quot;</value>
+            <value>&quot;Shopping&quot;</value>
+            <value>&quot;Social&quot;</value>
+            <value>&quot;Social,Music &amp; Audio&quot;</value>
+            <value>&quot;Weather&quot;</value>
+          </bin>
+          <bin default-name='false' value='&quot;Tools&quot;'>
+            <value>&quot;Art &amp; Design&quot;</value>
+            <value>&quot;Communication&quot;</value>
+            <value>&quot;Communication,Maps &amp; Navigation&quot;</value>
+            <value>&quot;Music&quot;</value>
+            <value>&quot;Music &amp; Audio&quot;</value>
+            <value>&quot;Photography&quot;</value>
+            <value>&quot;Productivity&quot;</value>
+            <value>&quot;Productivity,Lifestyle&quot;</value>
+            <value>&quot;Tools&quot;</value>
+            <value>&quot;Tools,Education&quot;</value>
+            <value>&quot;Video Players &amp; Editors&quot;</value>
+          </bin>
+          <bin default-name='false' value='&quot;Vehicles &amp; Travels&quot;'>
+            <value>&quot;Auto &amp; Vehicles&quot;</value>
+            <value>&quot;Maps &amp; Navigation&quot;</value>
+            <value>&quot;Travel &amp; Local&quot;</value>
+          </bin>
+        </calculation>
+      </column>
+      <column datatype='string' name='[Category]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Content Rating (group)]' role='dimension' type='nominal'>
+        <calculation class='categorical-bin' column='[Content Rating]' new-bin='true'>
+          <bin default-name='false' value='&quot;Mature&quot;'>
+            <value>&quot;Adults only 18+&quot;</value>
+            <value>&quot;Mature 17+&quot;</value>
+          </bin>
+        </calculation>
+      </column>
+      <column datatype='string' name='[Content Rating]' role='dimension' type='nominal' />
+      <column datatype='boolean' name='[Editors Choice]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='true' value='Editor&apos;s Choice' />
+        </aliases>
+      </column>
+      <column datatype='integer' name='[F1]' role='dimension' type='ordinal' />
+      <column datatype='boolean' name='[Free]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='false' value='Paid Apps -' />
+          <alias key='true' value='Free Apps -' />
+        </aliases>
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='GooglePlaystore2.csv' datatype='table' name='[__tableau_internal_object_id__].[GooglePlaystore2.csv_C55DEC8211194F338EAC73780877F42C]' role='measure' type='quantitative' />
+      <column-instance column='[Content Rating]' derivation='None' name='[none:Content Rating:nk]' pivot='key' type='nominal' />
+      <column-instance column='[F1]' derivation='None' name='[none:F1:ok]' pivot='key' type='ordinal' />
+      <group hidden='true' name='[Inclusions (Category (group),F1)]' name-style='unqualified' user:auto-column='include'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Category (group)]' />
+          <groupfilter function='level-members' level='[none:F1:ok]' />
+        </groupfilter>
+      </group>
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='C:/Users/soura/OneDrive/Documents/Tableau Workbooks/GooglePlaystore2.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='12/15/2022 03:33:44 PM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh increment-key='' incremental-updates='false'>
+            <refresh-event add-from-file-path='GooglePlaystore2' increment-value='%null%' refresh-type='create' rows-inserted='2241357' timestamp-start='2022-12-15 15:33:35.243' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>F1</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[F1]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F1</remote-alias>
+              <ordinal>0</ordinal>
+              <family>GooglePlaystore2.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2241357</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[GooglePlaystore2.csv_C55DEC8211194F338EAC73780877F42C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>App Name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[App Name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>App Name</remote-alias>
+              <ordinal>1</ordinal>
+              <family>GooglePlaystore2.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2122715</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[GooglePlaystore2.csv_C55DEC8211194F338EAC73780877F42C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Developer Id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Developer Id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Developer Id</remote-alias>
+              <ordinal>2</ordinal>
+              <family>GooglePlaystore2.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>386747</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[GooglePlaystore2.csv_C55DEC8211194F338EAC73780877F42C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Released</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Released]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Released</remote-alias>
+              <ordinal>3</ordinal>
+              <family>GooglePlaystore2.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>10732</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[GooglePlaystore2.csv_C55DEC8211194F338EAC73780877F42C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Last Updated</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Last Updated]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Last Updated</remote-alias>
+              <ordinal>4</ordinal>
+              <family>GooglePlaystore2.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>8293</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[GooglePlaystore2.csv_C55DEC8211194F338EAC73780877F42C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Category</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Category]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Category</remote-alias>
+              <ordinal>5</ordinal>
+              <family>GooglePlaystore2.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>68</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[GooglePlaystore2.csv_C55DEC8211194F338EAC73780877F42C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Content Rating</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Content Rating]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Content Rating</remote-alias>
+              <ordinal>6</ordinal>
+              <family>GooglePlaystore2.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[GooglePlaystore2.csv_C55DEC8211194F338EAC73780877F42C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Rating</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Rating]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Rating</remote-alias>
+              <ordinal>7</ordinal>
+              <family>GooglePlaystore2.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>41</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[GooglePlaystore2.csv_C55DEC8211194F338EAC73780877F42C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Rating Count</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Rating Count]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Rating Count</remote-alias>
+              <ordinal>8</ordinal>
+              <family>GooglePlaystore2.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>17560</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[GooglePlaystore2.csv_C55DEC8211194F338EAC73780877F42C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Maximum Installs</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Maximum Installs]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Maximum Installs</remote-alias>
+              <ordinal>9</ordinal>
+              <family>GooglePlaystore2.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>95905</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[GooglePlaystore2.csv_C55DEC8211194F338EAC73780877F42C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Minimum Android</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Minimum Android]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Minimum Android</remote-alias>
+              <ordinal>10</ordinal>
+              <family>GooglePlaystore2.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>25</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[GooglePlaystore2.csv_C55DEC8211194F338EAC73780877F42C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Size(in mb)</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Size(in mb)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Size(in mb)</remote-alias>
+              <ordinal>11</ordinal>
+              <family>GooglePlaystore2.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2106</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[GooglePlaystore2.csv_C55DEC8211194F338EAC73780877F42C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Price(in USD)</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Price(in USD)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Price(in USD)</remote-alias>
+              <ordinal>12</ordinal>
+              <family>GooglePlaystore2.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>246</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[GooglePlaystore2.csv_C55DEC8211194F338EAC73780877F42C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Free</remote-name>
+              <remote-type>11</remote-type>
+              <local-name>[Free]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Free</remote-alias>
+              <ordinal>13</ordinal>
+              <family>GooglePlaystore2.csv</family>
+              <local-type>boolean</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[GooglePlaystore2.csv_C55DEC8211194F338EAC73780877F42C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Ad Supported</remote-name>
+              <remote-type>11</remote-type>
+              <local-name>[Ad Supported]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Ad Supported</remote-alias>
+              <ordinal>14</ordinal>
+              <family>GooglePlaystore2.csv</family>
+              <local-type>boolean</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[GooglePlaystore2.csv_C55DEC8211194F338EAC73780877F42C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>In App Purchases</remote-name>
+              <remote-type>11</remote-type>
+              <local-name>[In App Purchases]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>In App Purchases</remote-alias>
+              <ordinal>15</ordinal>
+              <family>GooglePlaystore2.csv</family>
+              <local-type>boolean</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[GooglePlaystore2.csv_C55DEC8211194F338EAC73780877F42C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Editors Choice</remote-name>
+              <remote-type>11</remote-type>
+              <local-name>[Editors Choice]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Editors Choice</remote-alias>
+              <ordinal>16</ordinal>
+              <family>GooglePlaystore2.csv</family>
+              <local-type>boolean</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[GooglePlaystore2.csv_C55DEC8211194F338EAC73780877F42C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Content Rating:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Adults only 18+&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Teen&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Mature 17+&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Everyone 10+&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;Unrated&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Everyone&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[Content Rating (group)]' type='palette'>
+            <map to='#3d6a98'>
+              <bucket>&quot;Mature&quot;</bucket>
+            </map>
+            <map to='#9e3d22'>
+              <bucket>&quot;Teen&quot;</bucket>
+            </map>
+            <map to='#e4641e'>
+              <bucket>&quot;Everyone&quot;</bucket>
+            </map>
+            <map to='#ffda66'>
+              <bucket>&quot;Everyone 10+&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[Category (group)]' type='palette'>
+            <map to='#c14f22'>
+              <bucket>&quot;Business &amp; Finance&quot;</bucket>
+            </map>
+            <map to='#c14f22'>
+              <bucket>&quot;Education&quot;</bucket>
+            </map>
+            <map to='#c14f22'>
+              <bucket>&quot;Games&quot;</bucket>
+            </map>
+            <map to='#c14f22'>
+              <bucket>&quot;Lifestyle&quot;</bucket>
+            </map>
+            <map to='#c14f22'>
+              <bucket>&quot;Tools&quot;</bucket>
+            </map>
+            <map to='#c14f22'>
+              <bucket>&quot;Vehicles &amp; Travels&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='GooglePlaystore2.csv' id='GooglePlaystore2.csv_C55DEC8211194F338EAC73780877F42C'>
+            <properties context=''>
+              <relation connection='textscan.0sxb1xa1nbkgjh14hf85a0aehy7j' name='GooglePlaystore2.csv' table='[GooglePlaystore2#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='string' name='App Name' ordinal='1' />
+                  <column datatype='string' name='Developer Id' ordinal='2' />
+                  <column datatype='date' name='Released' ordinal='3' />
+                  <column datatype='date' name='Last Updated' ordinal='4' />
+                  <column datatype='string' name='Category' ordinal='5' />
+                  <column datatype='string' name='Content Rating' ordinal='6' />
+                  <column datatype='real' name='Rating' ordinal='7' />
+                  <column datatype='real' name='Rating Count' ordinal='8' />
+                  <column datatype='integer' name='Maximum Installs' ordinal='9' />
+                  <column datatype='string' name='Minimum Android' ordinal='10' />
+                  <column datatype='real' name='Size(in mb)' ordinal='11' />
+                  <column datatype='real' name='Price(in USD)' ordinal='12' />
+                  <column datatype='boolean' name='Free' ordinal='13' />
+                  <column datatype='boolean' name='Ad Supported' ordinal='14' />
+                  <column datatype='boolean' name='In App Purchases' ordinal='15' />
+                  <column datatype='boolean' name='Editors Choice' ordinal='16' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <actions>
+    <action caption='Highlight 1 (generated)' name='[Action1_1AEF6B16DA1F4939BA772914A38D6D1F]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Category Dashboard' type='sheet' worksheet='Content Type (no. of apps) pie chart' />
+      <command command='tsc:brush'>
+        <param name='exclude' value=' Category Name,Yearly number of apps released across different category,No. of Editor Choice apps KPI,Price Distribution,No. of Free apps KPI,Size Distribution,Top 10 most installed by each category' />
+        <param name='special-fields' value='all' />
+        <param name='target' value='Category Dashboard' />
+      </command>
+    </action>
+    <action caption='Highlight 2 (generated)' name='[Action2_172F4062CC544987807863117193AA32]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Category Dashboard' type='sheet' worksheet='Yearly number of apps released across different category' />
+      <command command='tsc:brush'>
+        <param name='exclude' value=' Category Name,No. of Editor Choice apps KPI,Content Type (no. of apps) pie chart,Price Distribution,No. of Free apps KPI,Size Distribution,Top 10 most installed by each category' />
+        <param name='special-fields' value='all' />
+        <param name='target' value='Category Dashboard' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name=' Category Name'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='GooglePlaystore2' name='federated.17xda7j1i2eocc1bm64121mp5hxx' />
+          </datasources>
+          <datasource-dependencies datasource='federated.17xda7j1i2eocc1bm64121mp5hxx'>
+            <column datatype='string' name='[Category (group)]' role='dimension' type='nominal'>
+              <calculation class='categorical-bin' column='[Category]' new-bin='true'>
+                <bin default-name='true' value='&quot;Business &amp; Finance&quot;'>
+                  <value>&quot;Business&quot;</value>
+                  <value>&quot;Finance&quot;</value>
+                </bin>
+                <bin default-name='false' value='&quot;Education&quot;'>
+                  <value>&quot;Books &amp; Reference&quot;</value>
+                  <value>&quot;Books &amp; Reference,Entertainment&quot;</value>
+                  <value>&quot;Books &amp; Reference,Libraries &amp; Demo&quot;</value>
+                  <value>&quot;Comics&quot;</value>
+                  <value>&quot;Education&quot;</value>
+                  <value>&quot;Education,Books &amp; Reference&quot;</value>
+                  <value>&quot;Education,Entertainment&quot;</value>
+                  <value>&quot;Educational&quot;</value>
+                  <value>&quot;Entertainment,Books &amp; Reference&quot;</value>
+                  <value>&quot;Libraries &amp; Demo&quot;</value>
+                  <value>&quot;News &amp; Magazines&quot;</value>
+                </bin>
+                <bin default-name='false' value='&quot;Games&quot;'>
+                  <value>&quot;Action&quot;</value>
+                  <value>&quot;Adventure&quot;</value>
+                  <value>&quot;Arcade&quot;</value>
+                  <value>&quot;Board&quot;</value>
+                  <value>&quot;Card&quot;</value>
+                  <value>&quot;Casino&quot;</value>
+                  <value>&quot;Puzzle&quot;</value>
+                  <value>&quot;Puzzle,Travel &amp; Local&quot;</value>
+                  <value>&quot;Racing&quot;</value>
+                  <value>&quot;Role Playing&quot;</value>
+                  <value>&quot;Simulation&quot;</value>
+                  <value>&quot;Sports&quot;</value>
+                  <value>&quot;Strategy&quot;</value>
+                  <value>&quot;Trivia&quot;</value>
+                  <value>&quot;Word&quot;</value>
+                </bin>
+                <bin default-name='false' value='&quot;Lifestyle&quot;'>
+                  <value>&quot;Beauty&quot;</value>
+                  <value>&quot;Casual&quot;</value>
+                  <value>&quot;Dating&quot;</value>
+                  <value>&quot;Entertainment&quot;</value>
+                  <value>&quot;Events&quot;</value>
+                  <value>&quot;Food &amp; Drink&quot;</value>
+                  <value>&quot;Food &amp; Drink,Art &amp; Design&quot;</value>
+                  <value>&quot;Food &amp; Drink,Puzzle&quot;</value>
+                  <value>&quot;Health &amp; Fitness&quot;</value>
+                  <value>&quot;House &amp; Home&quot;</value>
+                  <value>&quot;Lifestyle&quot;</value>
+                  <value>&quot;Lifestyle,Music &amp; Audio&quot;</value>
+                  <value>&quot;Medical&quot;</value>
+                  <value>&quot;Parenting&quot;</value>
+                  <value>&quot;Personalization&quot;</value>
+                  <value>&quot;Shopping&quot;</value>
+                  <value>&quot;Social&quot;</value>
+                  <value>&quot;Social,Music &amp; Audio&quot;</value>
+                  <value>&quot;Weather&quot;</value>
+                </bin>
+                <bin default-name='false' value='&quot;Tools&quot;'>
+                  <value>&quot;Art &amp; Design&quot;</value>
+                  <value>&quot;Communication&quot;</value>
+                  <value>&quot;Communication,Maps &amp; Navigation&quot;</value>
+                  <value>&quot;Music&quot;</value>
+                  <value>&quot;Music &amp; Audio&quot;</value>
+                  <value>&quot;Photography&quot;</value>
+                  <value>&quot;Productivity&quot;</value>
+                  <value>&quot;Productivity,Lifestyle&quot;</value>
+                  <value>&quot;Tools&quot;</value>
+                  <value>&quot;Tools,Education&quot;</value>
+                  <value>&quot;Video Players &amp; Editors&quot;</value>
+                </bin>
+                <bin default-name='false' value='&quot;Vehicles &amp; Travels&quot;'>
+                  <value>&quot;Auto &amp; Vehicles&quot;</value>
+                  <value>&quot;Maps &amp; Navigation&quot;</value>
+                  <value>&quot;Travel &amp; Local&quot;</value>
+                </bin>
+              </calculation>
+            </column>
+            <column datatype='string' name='[Category]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.17xda7j1i2eocc1bm64121mp5hxx].[Category (group)]' context='true' filter-group='4'>
+            <groupfilter function='member' level='[Category (group)]' member='&quot;Business &amp; Finance&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.17xda7j1i2eocc1bm64121mp5hxx].[Category (group)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='table'>
+            <format attr='background-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+            <format attr='font-weight' value='bold' />
+            <format attr='font-style' value='normal' />
+            <format attr='text-decoration' value='none' />
+            <format attr='font-size' value='32' />
+            <format attr='color' value='#1b1b1b' />
+            <format attr='font-family' value='Tableau Book' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.17xda7j1i2eocc1bm64121mp5hxx].[Category (group)]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{F43556AD-0615-4E54-8734-3D3411E44213}' />
+    </worksheet>
+    <worksheet name='Content Type (no. of apps) pie chart'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='GooglePlaystore2' name='federated.17xda7j1i2eocc1bm64121mp5hxx' />
+          </datasources>
+          <datasource-dependencies datasource='federated.17xda7j1i2eocc1bm64121mp5hxx'>
+            <column aggregation='CountD' datatype='string' name='[App Name]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Category (group)]' role='dimension' type='nominal'>
+              <calculation class='categorical-bin' column='[Category]' new-bin='true'>
+                <bin default-name='true' value='&quot;Business &amp; Finance&quot;'>
+                  <value>&quot;Business&quot;</value>
+                  <value>&quot;Finance&quot;</value>
+                </bin>
+                <bin default-name='false' value='&quot;Education&quot;'>
+                  <value>&quot;Books &amp; Reference&quot;</value>
+                  <value>&quot;Books &amp; Reference,Entertainment&quot;</value>
+                  <value>&quot;Books &amp; Reference,Libraries &amp; Demo&quot;</value>
+                  <value>&quot;Comics&quot;</value>
+                  <value>&quot;Education&quot;</value>
+                  <value>&quot;Education,Books &amp; Reference&quot;</value>
+                  <value>&quot;Education,Entertainment&quot;</value>
+                  <value>&quot;Educational&quot;</value>
+                  <value>&quot;Entertainment,Books &amp; Reference&quot;</value>
+                  <value>&quot;Libraries &amp; Demo&quot;</value>
+                  <value>&quot;News &amp; Magazines&quot;</value>
+                </bin>
+                <bin default-name='false' value='&quot;Games&quot;'>
+                  <value>&quot;Action&quot;</value>
+                  <value>&quot;Adventure&quot;</value>
+                  <value>&quot;Arcade&quot;</value>
+                  <value>&quot;Board&quot;</value>
+                  <value>&quot;Card&quot;</value>
+                  <value>&quot;Casino&quot;</value>
+                  <value>&quot;Puzzle&quot;</value>
+                  <value>&quot;Puzzle,Travel &amp; Local&quot;</value>
+                  <value>&quot;Racing&quot;</value>
+                  <value>&quot;Role Playing&quot;</value>
+                  <value>&quot;Simulation&quot;</value>
+                  <value>&quot;Sports&quot;</value>
+                  <value>&quot;Strategy&quot;</value>
+                  <value>&quot;Trivia&quot;</value>
+                  <value>&quot;Word&quot;</value>
+                </bin>
+                <bin default-name='false' value='&quot;Lifestyle&quot;'>
+                  <value>&quot;Beauty&quot;</value>
+                  <value>&quot;Casual&quot;</value>
+                  <value>&quot;Dating&quot;</value>
+                  <value>&quot;Entertainment&quot;</value>
+                  <value>&quot;Events&quot;</value>
+                  <value>&quot;Food &amp; Drink&quot;</value>
+                  <value>&quot;Food &amp; Drink,Art &amp; Design&quot;</value>
+                  <value>&quot;Food &amp; Drink,Puzzle&quot;</value>
+                  <value>&quot;Health &amp; Fitness&quot;</value>
+                  <value>&quot;House &amp; Home&quot;</value>
+                  <value>&quot;Lifestyle&quot;</value>
+                  <value>&quot;Lifestyle,Music &amp; Audio&quot;</value>
+                  <value>&quot;Medical&quot;</value>
+                  <value>&quot;Parenting&quot;</value>
+                  <value>&quot;Personalization&quot;</value>
+                  <value>&quot;Shopping&quot;</value>
+                  <value>&quot;Social&quot;</value>
+                  <value>&quot;Social,Music &amp; Audio&quot;</value>
+                  <value>&quot;Weather&quot;</value>
+                </bin>
+                <bin default-name='false' value='&quot;Tools&quot;'>
+                  <value>&quot;Art &amp; Design&quot;</value>
+                  <value>&quot;Communication&quot;</value>
+                  <value>&quot;Communication,Maps &amp; Navigation&quot;</value>
+                  <value>&quot;Music&quot;</value>
+                  <value>&quot;Music &amp; Audio&quot;</value>
+                  <value>&quot;Photography&quot;</value>
+                  <value>&quot;Productivity&quot;</value>
+                  <value>&quot;Productivity,Lifestyle&quot;</value>
+                  <value>&quot;Tools&quot;</value>
+                  <value>&quot;Tools,Education&quot;</value>
+                  <value>&quot;Video Players &amp; Editors&quot;</value>
+                </bin>
+                <bin default-name='false' value='&quot;Vehicles &amp; Travels&quot;'>
+                  <value>&quot;Auto &amp; Vehicles&quot;</value>
+                  <value>&quot;Maps &amp; Navigation&quot;</value>
+                  <value>&quot;Travel &amp; Local&quot;</value>
+                </bin>
+              </calculation>
+            </column>
+            <column datatype='string' name='[Category]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Content Rating (group)]' role='dimension' type='nominal'>
+              <calculation class='categorical-bin' column='[Content Rating]' new-bin='true'>
+                <bin default-name='false' value='&quot;Mature&quot;'>
+                  <value>&quot;Adults only 18+&quot;</value>
+                  <value>&quot;Mature 17+&quot;</value>
+                </bin>
+              </calculation>
+            </column>
+            <column datatype='string' name='[Content Rating]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[F1]' role='dimension' type='ordinal' />
+            <column-instance column='[App Name]' derivation='Count' name='[cnt:App Name:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[F1]' derivation='Count' name='[cnt:F1:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.17xda7j1i2eocc1bm64121mp5hxx].[Category (group)]' context='true' filter-group='4'>
+            <groupfilter function='member' level='[Category (group)]' member='&quot;Business &amp; Finance&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.17xda7j1i2eocc1bm64121mp5hxx].[Content Rating (group)]'>
+            <groupfilter from='&quot;Everyone&quot;' function='range' level='[Content Rating (group)]' to='&quot;Teen&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.17xda7j1i2eocc1bm64121mp5hxx].[Category (group)]</column>
+            <column>[federated.17xda7j1i2eocc1bm64121mp5hxx].[Content Rating (group)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='table'>
+            <format attr='background-color' value='#f9b342' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#555555' />
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.17xda7j1i2eocc1bm64121mp5hxx].[Content Rating (group)]' />
+              <wedge-size column='[federated.17xda7j1i2eocc1bm64121mp5hxx].[cnt:F1:qk]' />
+              <text column='[federated.17xda7j1i2eocc1bm64121mp5hxx].[Content Rating (group)]' />
+              <text column='[federated.17xda7j1i2eocc1bm64121mp5hxx].[cnt:F1:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Content Rating:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.17xda7j1i2eocc1bm64121mp5hxx].[Content Rating (group)]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>No. of Apps:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.17xda7j1i2eocc1bm64121mp5hxx].[cnt:F1:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.5932043790817261' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='false' />
+                <format attr='mark-labels-mode' value='highlight' />
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#333333' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+        <mark-labels>
+          <mark-label id='0'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.17xda7j1i2eocc1bm64121mp5hxx].[Content Rating (group)]</field>
+                  <field>[federated.17xda7j1i2eocc1bm64121mp5hxx].[cnt:App Name:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Everyone 10+&quot;</value>
+                <value>33901</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='-46' y='-6' />
+          </mark-label>
+          <mark-label id='1'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.17xda7j1i2eocc1bm64121mp5hxx].[Content Rating (group)]</field>
+                  <field>[federated.17xda7j1i2eocc1bm64121mp5hxx].[cnt:App Name:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Teen&quot;</value>
+                <value>196374</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='-63' y='-5' />
+          </mark-label>
+          <mark-label id='2'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.17xda7j1i2eocc1bm64121mp5hxx].[Content Rating (group)]</field>
+                  <field>[federated.17xda7j1i2eocc1bm64121mp5hxx].[cnt:App Name:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Mature&quot;</value>
+                <value>60425</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='-46' y='-3' />
+          </mark-label>
+          <mark-label id='3'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.17xda7j1i2eocc1bm64121mp5hxx].[Content Rating (group)]</field>
+                  <field>[federated.17xda7j1i2eocc1bm64121mp5hxx].[cnt:F1:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Everyone&quot;</value>
+                <value>8549</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='53' y='-11' />
+          </mark-label>
+        </mark-labels>
+      </table>
+      <simple-id uuid='{0983512A-F527-4119-BD89-5ED54684CC19}' />
+    </worksheet>
+    <worksheet name='No. of Editor Choice apps KPI'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='GooglePlaystore2' name='federated.17xda7j1i2eocc1bm64121mp5hxx' />
+          </datasources>
+          <datasource-dependencies datasource='federated.17xda7j1i2eocc1bm64121mp5hxx'>
+            <column caption='Editor&apos;s Choice Calc.' datatype='integer' name='[Calculation_1065664303370670081]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='if[Editors Choice]= TRUE then 1&#13;&#10;else 0 end' />
+            </column>
+            <column datatype='string' name='[Category (group)]' role='dimension' type='nominal'>
+              <calculation class='categorical-bin' column='[Category]' new-bin='true'>
+                <bin default-name='true' value='&quot;Business &amp; Finance&quot;'>
+                  <value>&quot;Business&quot;</value>
+                  <value>&quot;Finance&quot;</value>
+                </bin>
+                <bin default-name='false' value='&quot;Education&quot;'>
+                  <value>&quot;Books &amp; Reference&quot;</value>
+                  <value>&quot;Books &amp; Reference,Entertainment&quot;</value>
+                  <value>&quot;Books &amp; Reference,Libraries &amp; Demo&quot;</value>
+                  <value>&quot;Comics&quot;</value>
+                  <value>&quot;Education&quot;</value>
+                  <value>&quot;Education,Books &amp; Reference&quot;</value>
+                  <value>&quot;Education,Entertainment&quot;</value>
+                  <value>&quot;Educational&quot;</value>
+                  <value>&quot;Entertainment,Books &amp; Reference&quot;</value>
+                  <value>&quot;Libraries &amp; Demo&quot;</value>
+                  <value>&quot;News &amp; Magazines&quot;</value>
+                </bin>
+                <bin default-name='false' value='&quot;Games&quot;'>
+                  <value>&quot;Action&quot;</value>
+                  <value>&quot;Adventure&quot;</value>
+                  <value>&quot;Arcade&quot;</value>
+                  <value>&quot;Board&quot;</value>
+                  <value>&quot;Card&quot;</value>
+                  <value>&quot;Casino&quot;</value>
+                  <value>&quot;Puzzle&quot;</value>
+                  <value>&quot;Puzzle,Travel &amp; Local&quot;</value>
+                  <value>&quot;Racing&quot;</value>
+                  <value>&quot;Role Playing&quot;</value>
+                  <value>&quot;Simulation&quot;</value>
+                  <value>&quot;Sports&quot;</value>
+                  <value>&quot;Strategy&quot;</value>
+                  <value>&quot;Trivia&quot;</value>
+                  <value>&quot;Word&quot;</value>
+                </bin>
+                <bin default-name='false' value='&quot;Lifestyle&quot;'>
+                  <value>&quot;Beauty&quot;</value>
+                  <value>&quot;Casual&quot;</value>
+                  <value>&quot;Dating&quot;</value>
+                  <value>&quot;Entertainment&quot;</value>
+                  <value>&quot;Events&quot;</value>
+                  <value>&quot;Food &amp; Drink&quot;</value>
+                  <value>&quot;Food &amp; Drink,Art &amp; Design&quot;</value>
+                  <value>&quot;Food &amp; Drink,Puzzle&quot;</value>
+                  <value>&quot;Health &amp; Fitness&quot;</value>
+                  <value>&quot;House &amp; Home&quot;</value>
+                  <value>&quot;Lifestyle&quot;</value>
+                  <value>&quot;Lifestyle,Music &amp; Audio&quot;</value>
+                  <value>&quot;Medical&quot;</value>
+                  <value>&quot;Parenting&quot;</value>
+                  <value>&quot;Personalization&quot;</value>
+                  <value>&quot;Shopping&quot;</value>
+                  <value>&quot;Social&quot;</value>
+                  <value>&quot;Social,Music &amp; Audio&quot;</value>
+                  <value>&quot;Weather&quot;</value>
+                </bin>
+                <bin default-name='false' value='&quot;Tools&quot;'>
+                  <value>&quot;Art &amp; Design&quot;</value>
+                  <value>&quot;Communication&quot;</value>
+                  <value>&quot;Communication,Maps &amp; Navigation&quot;</value>
+                  <value>&quot;Music&quot;</value>
+                  <value>&quot;Music &amp; Audio&quot;</value>
+                  <value>&quot;Photography&quot;</value>
+                  <value>&quot;Productivity&quot;</value>
+                  <value>&quot;Productivity,Lifestyle&quot;</value>
+                  <value>&quot;Tools&quot;</value>
+                  <value>&quot;Tools,Education&quot;</value>
+                  <value>&quot;Video Players &amp; Editors&quot;</value>
+                </bin>
+                <bin default-name='false' value='&quot;Vehicles &amp; Travels&quot;'>
+                  <value>&quot;Auto &amp; Vehicles&quot;</value>
+                  <value>&quot;Maps &amp; Navigation&quot;</value>
+                  <value>&quot;Travel &amp; Local&quot;</value>
+                </bin>
+              </calculation>
+            </column>
+            <column datatype='string' name='[Category]' role='dimension' type='nominal' />
+            <column datatype='boolean' name='[Editors Choice]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='true' value='Editor&apos;s Choice' />
+              </aliases>
+            </column>
+            <column-instance column='[Calculation_1065664303370670081]' derivation='Sum' name='[sum:Calculation_1065664303370670081:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.17xda7j1i2eocc1bm64121mp5hxx].[Category (group)]' context='true' filter-group='4'>
+            <groupfilter function='member' level='[Category (group)]' member='&quot;Business &amp; Finance&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.17xda7j1i2eocc1bm64121mp5hxx].[Category (group)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-align' value='left' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-width' data-class='subtotal' value='0' />
+            <format attr='border-style' data-class='subtotal' value='none' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' data-class='subtotal' value='0' />
+            <format attr='border-style' data-class='subtotal' value='none' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+            <format attr='font-size' value='12' />
+            <format attr='text-decoration' value='none' />
+            <format attr='color' value='#1b1b1b' />
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.17xda7j1i2eocc1bm64121mp5hxx].[sum:Calculation_1065664303370670081:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{20F599A7-3A32-4B36-9E1B-65439F32FBED}' />
+    </worksheet>
+    <worksheet name='No. of Free apps KPI'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='GooglePlaystore2' name='federated.17xda7j1i2eocc1bm64121mp5hxx' />
+          </datasources>
+          <datasource-dependencies datasource='federated.17xda7j1i2eocc1bm64121mp5hxx'>
+            <column datatype='string' name='[Category (group)]' role='dimension' type='nominal'>
+              <calculation class='categorical-bin' column='[Category]' new-bin='true'>
+                <bin default-name='true' value='&quot;Business &amp; Finance&quot;'>
+                  <value>&quot;Business&quot;</value>
+                  <value>&quot;Finance&quot;</value>
+                </bin>
+                <bin default-name='false' value='&quot;Education&quot;'>
+                  <value>&quot;Books &amp; Reference&quot;</value>
+                  <value>&quot;Books &amp; Reference,Entertainment&quot;</value>
+                  <value>&quot;Books &amp; Reference,Libraries &amp; Demo&quot;</value>
+                  <value>&quot;Comics&quot;</value>
+                  <value>&quot;Education&quot;</value>
+                  <value>&quot;Education,Books &amp; Reference&quot;</value>
+                  <value>&quot;Education,Entertainment&quot;</value>
+                  <value>&quot;Educational&quot;</value>
+                  <value>&quot;Entertainment,Books &amp; Reference&quot;</value>
+                  <value>&quot;Libraries &amp; Demo&quot;</value>
+                  <value>&quot;News &amp; Magazines&quot;</value>
+                </bin>
+                <bin default-name='false' value='&quot;Games&quot;'>
+                  <value>&quot;Action&quot;</value>
+                  <value>&quot;Adventure&quot;</value>
+                  <value>&quot;Arcade&quot;</value>
+                  <value>&quot;Board&quot;</value>
+                  <value>&quot;Card&quot;</value>
+                  <value>&quot;Casino&quot;</value>
+                  <value>&quot;Puzzle&quot;</value>
+                  <value>&quot;Puzzle,Travel &amp; Local&quot;</value>
+                  <value>&quot;Racing&quot;</value>
+                  <value>&quot;Role Playing&quot;</value>
+                  <value>&quot;Simulation&quot;</value>
+                  <value>&quot;Sports&quot;</value>
+                  <value>&quot;Strategy&quot;</value>
+                  <value>&quot;Trivia&quot;</value>
+                  <value>&quot;Word&quot;</value>
+                </bin>
+                <bin default-name='false' value='&quot;Lifestyle&quot;'>
+                  <value>&quot;Beauty&quot;</value>
+                  <value>&quot;Casual&quot;</value>
+                  <value>&quot;Dating&quot;</value>
+                  <value>&quot;Entertainment&quot;</value>
+                  <value>&quot;Events&quot;</value>
+                  <value>&quot;Food &amp; Drink&quot;</value>
+                  <value>&quot;Food &amp; Drink,Art &amp; Design&quot;</value>
+                  <value>&quot;Food &amp; Drink,Puzzle&quot;</value>
+                  <value>&quot;Health &amp; Fitness&quot;</value>
+                  <value>&quot;House &amp; Home&quot;</value>
+                  <value>&quot;Lifestyle&quot;</value>
+                  <value>&quot;Lifestyle,Music &amp; Audio&quot;</value>
+                  <value>&quot;Medical&quot;</value>
+                  <value>&quot;Parenting&quot;</value>
+                  <value>&quot;Personalization&quot;</value>
+                  <value>&quot;Shopping&quot;</value>
+                  <value>&quot;Social&quot;</value>
+                  <value>&quot;Social,Music &amp; Audio&quot;</value>
+                  <value>&quot;Weather&quot;</value>
+                </bin>
+                <bin default-name='false' value='&quot;Tools&quot;'>
+                  <value>&quot;Art &amp; Design&quot;</value>
+                  <value>&quot;Communication&quot;</value>
+                  <value>&quot;Communication,Maps &amp; Navigation&quot;</value>
+                  <value>&quot;Music&quot;</value>
+                  <value>&quot;Music &amp; Audio&quot;</value>
+                  <value>&quot;Photography&quot;</value>
+                  <value>&quot;Productivity&quot;</value>
+                  <value>&quot;Productivity,Lifestyle&quot;</value>
+                  <value>&quot;Tools&quot;</value>
+                  <value>&quot;Tools,Education&quot;</value>
+                  <value>&quot;Video Players &amp; Editors&quot;</value>
+                </bin>
+                <bin default-name='false' value='&quot;Vehicles &amp; Travels&quot;'>
+                  <value>&quot;Auto &amp; Vehicles&quot;</value>
+                  <value>&quot;Maps &amp; Navigation&quot;</value>
+                  <value>&quot;Travel &amp; Local&quot;</value>
+                </bin>
+              </calculation>
+            </column>
+            <column datatype='string' name='[Category]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[F1]' role='dimension' type='ordinal' />
+            <column datatype='boolean' name='[Free]' role='dimension' type='nominal'>
+              <aliases>
+                <alias key='false' value='Paid Apps -' />
+                <alias key='true' value='Free Apps -' />
+              </aliases>
+            </column>
+            <column-instance column='[F1]' derivation='Count' name='[cnt:F1:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Free]' derivation='None' name='[none:Free:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.17xda7j1i2eocc1bm64121mp5hxx].[Category (group)]' context='true' filter-group='4'>
+            <groupfilter function='member' level='[Category (group)]' member='&quot;Business &amp; Finance&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.17xda7j1i2eocc1bm64121mp5hxx].[Category (group)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-align' value='left' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='band-color' scope='rows' value='#00000000' />
+            <format attr='border-width' data-class='subtotal' value='0' />
+            <format attr='border-style' data-class='subtotal' value='none' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-family' field='[federated.17xda7j1i2eocc1bm64121mp5hxx].[none:Free:nk]' value='Tableau Bold' />
+            <format attr='color' field='[federated.17xda7j1i2eocc1bm64121mp5hxx].[none:Free:nk]' value='#333333' />
+            <format attr='font-weight' field='[federated.17xda7j1i2eocc1bm64121mp5hxx].[none:Free:nk]' value='bold' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='band-color' scope='rows' value='#00000000' />
+            <format attr='border-width' data-class='subtotal' value='0' />
+            <format attr='border-style' data-class='subtotal' value='none' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#00000000' />
+            <format attr='band-size' scope='rows' value='1' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+            <format attr='font-size' value='12' />
+            <format attr='color' value='#1b1b1b' />
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.17xda7j1i2eocc1bm64121mp5hxx].[cnt:F1:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.17xda7j1i2eocc1bm64121mp5hxx].[none:Free:nk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{39BFBCCC-341E-4AC7-934A-4F79A26EF8A9}' />
+    </worksheet>
+    <worksheet name='Price Distribution'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='GooglePlaystore2' name='federated.17xda7j1i2eocc1bm64121mp5hxx' />
+          </datasources>
+          <datasource-dependencies datasource='federated.17xda7j1i2eocc1bm64121mp5hxx'>
+            <column caption='Price Bins Calculated' datatype='string' name='[Calculation_1065664303103238144]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='if [Price(in USD)]&lt;1 then &quot;&lt;1&quot;&#13;&#10;ELSEIF  [Price(in USD)]&gt;=1 and [Price(in USD)]&lt;5 then &quot;&gt;=1 and &lt;5&quot;&#13;&#10;ELSEIF  [Price(in USD)]&gt;=5 and [Price(in USD)]&lt;10 then &quot;&gt;=5 and &lt;10&quot;&#13;&#10;ELSEIF  [Price(in USD)]&gt;=10 and [Price(in USD)]&lt;50 then &quot;&gt;=10 and &lt;50&quot;&#13;&#10;elseif [Price(in USD)]&gt;=50 and [Price(in USD)]&lt;100 then &quot;&gt;=50 and &lt;100&quot;&#13;&#10;elseif [Price(in USD)]&gt;=100 then &quot;&gt;=100&quot; &#13;&#10;end' />
+              <aliases>
+                <alias key='&quot;&gt;=1 and &lt;5&quot;' value='1-5' />
+                <alias key='&quot;&gt;=10 and &lt;50&quot;' value='10-50' />
+                <alias key='&quot;&gt;=5 and &lt;10&quot;' value='5-10' />
+                <alias key='&quot;&gt;=50 and &lt;100&quot;' value='50-100' />
+              </aliases>
+            </column>
+            <column datatype='string' name='[Category (group)]' role='dimension' type='nominal'>
+              <calculation class='categorical-bin' column='[Category]' new-bin='true'>
+                <bin default-name='true' value='&quot;Business &amp; Finance&quot;'>
+                  <value>&quot;Business&quot;</value>
+                  <value>&quot;Finance&quot;</value>
+                </bin>
+                <bin default-name='false' value='&quot;Education&quot;'>
+                  <value>&quot;Books &amp; Reference&quot;</value>
+                  <value>&quot;Books &amp; Reference,Entertainment&quot;</value>
+                  <value>&quot;Books &amp; Reference,Libraries &amp; Demo&quot;</value>
+                  <value>&quot;Comics&quot;</value>
+                  <value>&quot;Education&quot;</value>
+                  <value>&quot;Education,Books &amp; Reference&quot;</value>
+                  <value>&quot;Education,Entertainment&quot;</value>
+                  <value>&quot;Educational&quot;</value>
+                  <value>&quot;Entertainment,Books &amp; Reference&quot;</value>
+                  <value>&quot;Libraries &amp; Demo&quot;</value>
+                  <value>&quot;News &amp; Magazines&quot;</value>
+                </bin>
+                <bin default-name='false' value='&quot;Games&quot;'>
+                  <value>&quot;Action&quot;</value>
+                  <value>&quot;Adventure&quot;</value>
+                  <value>&quot;Arcade&quot;</value>
+                  <value>&quot;Board&quot;</value>
+                  <value>&quot;Card&quot;</value>
+                  <value>&quot;Casino&quot;</value>
+                  <value>&quot;Puzzle&quot;</value>
+                  <value>&quot;Puzzle,Travel &amp; Local&quot;</value>
+                  <value>&quot;Racing&quot;</value>
+                  <value>&quot;Role Playing&quot;</value>
+                  <value>&quot;Simulation&quot;</value>
+                  <value>&quot;Sports&quot;</value>
+                  <value>&quot;Strategy&quot;</value>
+                  <value>&quot;Trivia&quot;</value>
+                  <value>&quot;Word&quot;</value>
+                </bin>
+                <bin default-name='false' value='&quot;Lifestyle&quot;'>
+                  <value>&quot;Beauty&quot;</value>
+                  <value>&quot;Casual&quot;</value>
+                  <value>&quot;Dating&quot;</value>
+                  <value>&quot;Entertainment&quot;</value>
+                  <value>&quot;Events&quot;</value>
+                  <value>&quot;Food &amp; Drink&quot;</value>
+                  <value>&quot;Food &amp; Drink,Art &amp; Design&quot;</value>
+                  <value>&quot;Food &amp; Drink,Puzzle&quot;</value>
+                  <value>&quot;Health &amp; Fitness&quot;</value>
+                  <value>&quot;House &amp; Home&quot;</value>
+                  <value>&quot;Lifestyle&quot;</value>
+                  <value>&quot;Lifestyle,Music &amp; Audio&quot;</value>
+                  <value>&quot;Medical&quot;</value>
+                  <value>&quot;Parenting&quot;</value>
+                  <value>&quot;Personalization&quot;</value>
+                  <value>&quot;Shopping&quot;</value>
+                  <value>&quot;Social&quot;</value>
+                  <value>&quot;Social,Music &amp; Audio&quot;</value>
+                  <value>&quot;Weather&quot;</value>
+                </bin>
+                <bin default-name='false' value='&quot;Tools&quot;'>
+                  <value>&quot;Art &amp; Design&quot;</value>
+                  <value>&quot;Communication&quot;</value>
+                  <value>&quot;Communication,Maps &amp; Navigation&quot;</value>
+                  <value>&quot;Music&quot;</value>
+                  <value>&quot;Music &amp; Audio&quot;</value>
+                  <value>&quot;Photography&quot;</value>
+                  <value>&quot;Productivity&quot;</value>
+                  <value>&quot;Productivity,Lifestyle&quot;</value>
+                  <value>&quot;Tools&quot;</value>
+                  <value>&quot;Tools,Education&quot;</value>
+                  <value>&quot;Video Players &amp; Editors&quot;</value>
+                </bin>
+                <bin default-name='false' value='&quot;Vehicles &amp; Travels&quot;'>
+                  <value>&quot;Auto &amp; Vehicles&quot;</value>
+                  <value>&quot;Maps &amp; Navigation&quot;</value>
+                  <value>&quot;Travel &amp; Local&quot;</value>
+                </bin>
+              </calculation>
+            </column>
+            <column datatype='string' name='[Category]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[F1]' role='dimension' type='ordinal' />
+            <column datatype='real' name='[Price(in USD)]' role='measure' type='quantitative' />
+            <column-instance column='[F1]' derivation='Count' name='[cnt:F1:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1065664303103238144]' derivation='None' name='[none:Calculation_1065664303103238144:nk]' pivot='key' type='nominal' />
+            <column-instance column='[F1]' derivation='None' name='[none:F1:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.17xda7j1i2eocc1bm64121mp5hxx].[Category (group)]' context='true' filter-group='4'>
+            <groupfilter function='member' level='[Category (group)]' member='&quot;Business &amp; Finance&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <manual-sort column='[federated.17xda7j1i2eocc1bm64121mp5hxx].[none:Calculation_1065664303103238144:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;&lt;1&quot;</bucket>
+              <bucket>&quot;&gt;=1 and &lt;5&quot;</bucket>
+              <bucket>&quot;&gt;=5 and &lt;10&quot;</bucket>
+              <bucket>&quot;&gt;=10 and &lt;50&quot;</bucket>
+              <bucket>&quot;&gt;=50 and &lt;100&quot;</bucket>
+              <bucket>&quot;&gt;=100&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <filter class='categorical' column='[federated.17xda7j1i2eocc1bm64121mp5hxx].[none:F1:ok]'>
+            <groupfilter expression='SUM([Price(in USD)]) &gt; 0.' function='filter' user:ui-filter-by-field='true' user:ui-marker='filter-by'>
+              <groupfilter function='level-members' level='[none:F1:ok]' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-manual-selection-is-empty='true' user:ui-marker='enumerate' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.17xda7j1i2eocc1bm64121mp5hxx].[Category (group)]</column>
+            <column>[federated.17xda7j1i2eocc1bm64121mp5hxx].[none:F1:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='stroke-color' value='#555555' />
+            <format attr='tick-color' value='#555555' />
+            <format attr='title' class='0' field='[federated.17xda7j1i2eocc1bm64121mp5hxx].[cnt:F1:qk]' scope='rows' value='No. of Apps' />
+          </style-rule>
+          <style-rule element='field-labels'>
+            <format attr='color' value='#f9b342' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.17xda7j1i2eocc1bm64121mp5hxx].[none:Calculation_1065664303103238144:nk]' value='true' />
+            <format attr='text-orientation' field='[federated.17xda7j1i2eocc1bm64121mp5hxx].[none:Calculation_1065664303103238144:nk]' value='0' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#f9b342' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+            <format attr='color' value='#555555' />
+            <format attr='font-size' value='9' />
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' scope='rows' value='1' />
+            <format attr='line-visibility' scope='rows' value='on' />
+            <format attr='line-pattern-only' scope='rows' value='solid' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Price:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.17xda7j1i2eocc1bm64121mp5hxx].[none:Calculation_1065664303103238144:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>No. of Apps:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.17xda7j1i2eocc1bm64121mp5hxx].[cnt:F1:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#e24700' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.17xda7j1i2eocc1bm64121mp5hxx].[cnt:F1:qk]</rows>
+        <cols>[federated.17xda7j1i2eocc1bm64121mp5hxx].[none:Calculation_1065664303103238144:nk]</cols>
+        <show-full-range>
+          <column>[federated.17xda7j1i2eocc1bm64121mp5hxx].[none:Price(in USD) (bin):qk]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{029B6FA4-F323-4DA4-B7A2-68DBE4760909}' />
+    </worksheet>
+    <worksheet name='Size Distribution'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='GooglePlaystore2' name='federated.17xda7j1i2eocc1bm64121mp5hxx' />
+          </datasources>
+          <datasource-dependencies datasource='federated.17xda7j1i2eocc1bm64121mp5hxx'>
+            <column caption='Calculated  Size Bins' datatype='string' name='[Calculation_661747711163039745]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='if [Size(in mb)]&lt; 1 then &quot;&lt;1&quot; &#13;&#10;ELSEIF  [Size(in mb)]&gt;=1 and [Size(in mb)]&lt;10 then &quot;&gt;=1 and &lt;10&quot;&#13;&#10;ELSEIF  [Size(in mb)]&gt;=10 and [Size(in mb)]&lt;25 then &quot;&gt;=10 and &lt;25&quot;&#13;&#10;ELSEIF  [Size(in mb)]&gt;=25 and [Size(in mb)]&lt;50 then &quot;&gt;=25 and &lt;50&quot;&#13;&#10;ELSEIF  [Size(in mb)]&gt;=50 and [Size(in mb)]&lt;75 then &quot;&gt;=50 and &lt;75&quot;&#13;&#10;ELSEIF  [Size(in mb)]&gt;=75 and [Size(in mb)]&lt;100 then &quot;&gt;=75 and &lt;100&quot;&#13;&#10;ELSEIF  [Size(in mb)]&gt;=100 then &quot;&gt;=100&quot; end' />
+              <aliases>
+                <alias key='&quot;&gt;=1 and &lt;10&quot;' value='1-10' />
+                <alias key='&quot;&gt;=10 and &lt;25&quot;' value='10-25' />
+                <alias key='&quot;&gt;=25 and &lt;50&quot;' value='25-50' />
+                <alias key='&quot;&gt;=50 and &lt;75&quot;' value='50-75' />
+                <alias key='&quot;&gt;=75 and &lt;100&quot;' value='75-100' />
+              </aliases>
+            </column>
+            <column datatype='string' name='[Category (group)]' role='dimension' type='nominal'>
+              <calculation class='categorical-bin' column='[Category]' new-bin='true'>
+                <bin default-name='true' value='&quot;Business &amp; Finance&quot;'>
+                  <value>&quot;Business&quot;</value>
+                  <value>&quot;Finance&quot;</value>
+                </bin>
+                <bin default-name='false' value='&quot;Education&quot;'>
+                  <value>&quot;Books &amp; Reference&quot;</value>
+                  <value>&quot;Books &amp; Reference,Entertainment&quot;</value>
+                  <value>&quot;Books &amp; Reference,Libraries &amp; Demo&quot;</value>
+                  <value>&quot;Comics&quot;</value>
+                  <value>&quot;Education&quot;</value>
+                  <value>&quot;Education,Books &amp; Reference&quot;</value>
+                  <value>&quot;Education,Entertainment&quot;</value>
+                  <value>&quot;Educational&quot;</value>
+                  <value>&quot;Entertainment,Books &amp; Reference&quot;</value>
+                  <value>&quot;Libraries &amp; Demo&quot;</value>
+                  <value>&quot;News &amp; Magazines&quot;</value>
+                </bin>
+                <bin default-name='false' value='&quot;Games&quot;'>
+                  <value>&quot;Action&quot;</value>
+                  <value>&quot;Adventure&quot;</value>
+                  <value>&quot;Arcade&quot;</value>
+                  <value>&quot;Board&quot;</value>
+                  <value>&quot;Card&quot;</value>
+                  <value>&quot;Casino&quot;</value>
+                  <value>&quot;Puzzle&quot;</value>
+                  <value>&quot;Puzzle,Travel &amp; Local&quot;</value>
+                  <value>&quot;Racing&quot;</value>
+                  <value>&quot;Role Playing&quot;</value>
+                  <value>&quot;Simulation&quot;</value>
+                  <value>&quot;Sports&quot;</value>
+                  <value>&quot;Strategy&quot;</value>
+                  <value>&quot;Trivia&quot;</value>
+                  <value>&quot;Word&quot;</value>
+                </bin>
+                <bin default-name='false' value='&quot;Lifestyle&quot;'>
+                  <value>&quot;Beauty&quot;</value>
+                  <value>&quot;Casual&quot;</value>
+                  <value>&quot;Dating&quot;</value>
+                  <value>&quot;Entertainment&quot;</value>
+                  <value>&quot;Events&quot;</value>
+                  <value>&quot;Food &amp; Drink&quot;</value>
+                  <value>&quot;Food &amp; Drink,Art &amp; Design&quot;</value>
+                  <value>&quot;Food &amp; Drink,Puzzle&quot;</value>
+                  <value>&quot;Health &amp; Fitness&quot;</value>
+                  <value>&quot;House &amp; Home&quot;</value>
+                  <value>&quot;Lifestyle&quot;</value>
+                  <value>&quot;Lifestyle,Music &amp; Audio&quot;</value>
+                  <value>&quot;Medical&quot;</value>
+                  <value>&quot;Parenting&quot;</value>
+                  <value>&quot;Personalization&quot;</value>
+                  <value>&quot;Shopping&quot;</value>
+                  <value>&quot;Social&quot;</value>
+                  <value>&quot;Social,Music &amp; Audio&quot;</value>
+                  <value>&quot;Weather&quot;</value>
+                </bin>
+                <bin default-name='false' value='&quot;Tools&quot;'>
+                  <value>&quot;Art &amp; Design&quot;</value>
+                  <value>&quot;Communication&quot;</value>
+                  <value>&quot;Communication,Maps &amp; Navigation&quot;</value>
+                  <value>&quot;Music&quot;</value>
+                  <value>&quot;Music &amp; Audio&quot;</value>
+                  <value>&quot;Photography&quot;</value>
+                  <value>&quot;Productivity&quot;</value>
+                  <value>&quot;Productivity,Lifestyle&quot;</value>
+                  <value>&quot;Tools&quot;</value>
+                  <value>&quot;Tools,Education&quot;</value>
+                  <value>&quot;Video Players &amp; Editors&quot;</value>
+                </bin>
+                <bin default-name='false' value='&quot;Vehicles &amp; Travels&quot;'>
+                  <value>&quot;Auto &amp; Vehicles&quot;</value>
+                  <value>&quot;Maps &amp; Navigation&quot;</value>
+                  <value>&quot;Travel &amp; Local&quot;</value>
+                </bin>
+              </calculation>
+            </column>
+            <column datatype='string' name='[Category]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[F1]' role='dimension' type='ordinal' />
+            <column datatype='real' name='[Size(in mb)]' role='measure' type='quantitative' />
+            <column-instance column='[F1]' derivation='Count' name='[cnt:F1:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_661747711163039745]' derivation='None' name='[none:Calculation_661747711163039745:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.17xda7j1i2eocc1bm64121mp5hxx].[Category (group)]' context='true' filter-group='4'>
+            <groupfilter function='member' level='[Category (group)]' member='&quot;Business &amp; Finance&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.17xda7j1i2eocc1bm64121mp5hxx].[none:Calculation_661747711163039745:nk]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Calculation_661747711163039745:nk]' />
+              <groupfilter function='member' level='[none:Calculation_661747711163039745:nk]' member='%null%' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.17xda7j1i2eocc1bm64121mp5hxx].[none:Calculation_661747711163039745:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;&lt;1&quot;</bucket>
+              <bucket>&quot;&gt;=1 and &lt;10&quot;</bucket>
+              <bucket>&quot;&gt;=10 and &lt;25&quot;</bucket>
+              <bucket>&quot;&gt;=25 and &lt;50&quot;</bucket>
+              <bucket>&quot;&gt;=50 and &lt;75&quot;</bucket>
+              <bucket>&quot;&gt;=75 and &lt;100&quot;</bucket>
+              <bucket>&quot;&gt;=100&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.17xda7j1i2eocc1bm64121mp5hxx].[Category (group)]</column>
+            <column>[federated.17xda7j1i2eocc1bm64121mp5hxx].[none:Calculation_661747711163039745:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='stroke-color' value='#555555' />
+            <format attr='tick-color' value='#555555' />
+            <format attr='title' class='0' field='[federated.17xda7j1i2eocc1bm64121mp5hxx].[cnt:F1:qk]' scope='rows' value='No. of Apps' />
+          </style-rule>
+          <style-rule element='field-labels'>
+            <format attr='color' value='#f9b342' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.17xda7j1i2eocc1bm64121mp5hxx].[none:Calculation_661747711163039745:nk]' value='true' />
+            <format attr='text-orientation' field='[federated.17xda7j1i2eocc1bm64121mp5hxx].[none:Calculation_661747711163039745:nk]' value='0' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#f9b342' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='color' value='#555555' />
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Size:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.17xda7j1i2eocc1bm64121mp5hxx].[none:Calculation_661747711163039745:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>No. of Apps:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.17xda7j1i2eocc1bm64121mp5hxx].[cnt:F1:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#e24700' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.17xda7j1i2eocc1bm64121mp5hxx].[cnt:F1:qk]</rows>
+        <cols>[federated.17xda7j1i2eocc1bm64121mp5hxx].[none:Calculation_661747711163039745:nk]</cols>
+      </table>
+      <simple-id uuid='{86194FE7-1E6C-4A98-ABBA-10C9E975F33C}' />
+    </worksheet>
+    <worksheet name='Top 10 most installed by each category'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='GooglePlaystore2' name='federated.17xda7j1i2eocc1bm64121mp5hxx' />
+          </datasources>
+          <datasource-dependencies datasource='federated.17xda7j1i2eocc1bm64121mp5hxx'>
+            <column aggregation='CountD' datatype='string' name='[App Name]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Category (group)]' role='dimension' type='nominal'>
+              <calculation class='categorical-bin' column='[Category]' new-bin='true'>
+                <bin default-name='true' value='&quot;Business &amp; Finance&quot;'>
+                  <value>&quot;Business&quot;</value>
+                  <value>&quot;Finance&quot;</value>
+                </bin>
+                <bin default-name='false' value='&quot;Education&quot;'>
+                  <value>&quot;Books &amp; Reference&quot;</value>
+                  <value>&quot;Books &amp; Reference,Entertainment&quot;</value>
+                  <value>&quot;Books &amp; Reference,Libraries &amp; Demo&quot;</value>
+                  <value>&quot;Comics&quot;</value>
+                  <value>&quot;Education&quot;</value>
+                  <value>&quot;Education,Books &amp; Reference&quot;</value>
+                  <value>&quot;Education,Entertainment&quot;</value>
+                  <value>&quot;Educational&quot;</value>
+                  <value>&quot;Entertainment,Books &amp; Reference&quot;</value>
+                  <value>&quot;Libraries &amp; Demo&quot;</value>
+                  <value>&quot;News &amp; Magazines&quot;</value>
+                </bin>
+                <bin default-name='false' value='&quot;Games&quot;'>
+                  <value>&quot;Action&quot;</value>
+                  <value>&quot;Adventure&quot;</value>
+                  <value>&quot;Arcade&quot;</value>
+                  <value>&quot;Board&quot;</value>
+                  <value>&quot;Card&quot;</value>
+                  <value>&quot;Casino&quot;</value>
+                  <value>&quot;Puzzle&quot;</value>
+                  <value>&quot;Puzzle,Travel &amp; Local&quot;</value>
+                  <value>&quot;Racing&quot;</value>
+                  <value>&quot;Role Playing&quot;</value>
+                  <value>&quot;Simulation&quot;</value>
+                  <value>&quot;Sports&quot;</value>
+                  <value>&quot;Strategy&quot;</value>
+                  <value>&quot;Trivia&quot;</value>
+                  <value>&quot;Word&quot;</value>
+                </bin>
+                <bin default-name='false' value='&quot;Lifestyle&quot;'>
+                  <value>&quot;Beauty&quot;</value>
+                  <value>&quot;Casual&quot;</value>
+                  <value>&quot;Dating&quot;</value>
+                  <value>&quot;Entertainment&quot;</value>
+                  <value>&quot;Events&quot;</value>
+                  <value>&quot;Food &amp; Drink&quot;</value>
+                  <value>&quot;Food &amp; Drink,Art &amp; Design&quot;</value>
+                  <value>&quot;Food &amp; Drink,Puzzle&quot;</value>
+                  <value>&quot;Health &amp; Fitness&quot;</value>
+                  <value>&quot;House &amp; Home&quot;</value>
+                  <value>&quot;Lifestyle&quot;</value>
+                  <value>&quot;Lifestyle,Music &amp; Audio&quot;</value>
+                  <value>&quot;Medical&quot;</value>
+                  <value>&quot;Parenting&quot;</value>
+                  <value>&quot;Personalization&quot;</value>
+                  <value>&quot;Shopping&quot;</value>
+                  <value>&quot;Social&quot;</value>
+                  <value>&quot;Social,Music &amp; Audio&quot;</value>
+                  <value>&quot;Weather&quot;</value>
+                </bin>
+                <bin default-name='false' value='&quot;Tools&quot;'>
+                  <value>&quot;Art &amp; Design&quot;</value>
+                  <value>&quot;Communication&quot;</value>
+                  <value>&quot;Communication,Maps &amp; Navigation&quot;</value>
+                  <value>&quot;Music&quot;</value>
+                  <value>&quot;Music &amp; Audio&quot;</value>
+                  <value>&quot;Photography&quot;</value>
+                  <value>&quot;Productivity&quot;</value>
+                  <value>&quot;Productivity,Lifestyle&quot;</value>
+                  <value>&quot;Tools&quot;</value>
+                  <value>&quot;Tools,Education&quot;</value>
+                  <value>&quot;Video Players &amp; Editors&quot;</value>
+                </bin>
+                <bin default-name='false' value='&quot;Vehicles &amp; Travels&quot;'>
+                  <value>&quot;Auto &amp; Vehicles&quot;</value>
+                  <value>&quot;Maps &amp; Navigation&quot;</value>
+                  <value>&quot;Travel &amp; Local&quot;</value>
+                </bin>
+              </calculation>
+            </column>
+            <column datatype='string' name='[Category]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[F1]' role='dimension' type='ordinal' />
+            <column datatype='integer' name='[Maximum Installs]' role='measure' type='quantitative' />
+            <column-instance column='[App Name]' derivation='None' name='[none:App Name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[F1]' derivation='None' name='[none:F1:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Maximum Installs]' derivation='Sum' name='[sum:Maximum Installs:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.17xda7j1i2eocc1bm64121mp5hxx].[Category (group)]' context='true' filter-group='4'>
+            <groupfilter function='member' level='[Category (group)]' member='&quot;Business &amp; Finance&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.17xda7j1i2eocc1bm64121mp5hxx].[none:F1:ok]'>
+            <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([Maximum Installs])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:F1:ok]' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-manual-selection-is-empty='true' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.17xda7j1i2eocc1bm64121mp5hxx].[Category (group)]</column>
+            <column>[federated.17xda7j1i2eocc1bm64121mp5hxx].[none:F1:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='header'>
+            <format attr='band-color' scope='rows' value='#00000000' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.17xda7j1i2eocc1bm64121mp5hxx].[sum:Maximum Installs:qk]' palette='orange_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='band-color' scope='rows' value='#00000000' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='band-size' scope='rows' value='1' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-weight' value='normal' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='font-weight' value='bold' />
+            <format attr='color' value='#333333' />
+            <format attr='font-size' value='10' />
+            <format attr='title' field='[federated.17xda7j1i2eocc1bm64121mp5hxx].[Category (group)]' value='Category:'>
+              <formatted-text>
+                <run>Category:</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+          <style-rule element='quick-filter-title'>
+            <format attr='font-family' value='Tableau Bold' />
+            <format attr='font-weight' value='bold' />
+            <format attr='color' value='#333333' />
+            <format attr='font-size' value='14' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.17xda7j1i2eocc1bm64121mp5hxx].[sum:Maximum Installs:qk]' />
+              <color column='[federated.17xda7j1i2eocc1bm64121mp5hxx].[sum:Maximum Installs:qk]' />
+              <text column='[federated.17xda7j1i2eocc1bm64121mp5hxx].[none:App Name:nk]' />
+              <text column='[federated.17xda7j1i2eocc1bm64121mp5hxx].[sum:Maximum Installs:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>App Name:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.17xda7j1i2eocc1bm64121mp5hxx].[none:App Name:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Installs:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.17xda7j1i2eocc1bm64121mp5hxx].[sum:Maximum Installs:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{741A4290-6C6F-49B7-B0C7-D6AC2647B2FE}' />
+    </worksheet>
+    <worksheet name='Yearly number of apps released across different category'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='GooglePlaystore2' name='federated.17xda7j1i2eocc1bm64121mp5hxx' />
+          </datasources>
+          <datasource-dependencies datasource='federated.17xda7j1i2eocc1bm64121mp5hxx'>
+            <column datatype='string' name='[Category (group)]' role='dimension' type='nominal'>
+              <calculation class='categorical-bin' column='[Category]' new-bin='true'>
+                <bin default-name='true' value='&quot;Business &amp; Finance&quot;'>
+                  <value>&quot;Business&quot;</value>
+                  <value>&quot;Finance&quot;</value>
+                </bin>
+                <bin default-name='false' value='&quot;Education&quot;'>
+                  <value>&quot;Books &amp; Reference&quot;</value>
+                  <value>&quot;Books &amp; Reference,Entertainment&quot;</value>
+                  <value>&quot;Books &amp; Reference,Libraries &amp; Demo&quot;</value>
+                  <value>&quot;Comics&quot;</value>
+                  <value>&quot;Education&quot;</value>
+                  <value>&quot;Education,Books &amp; Reference&quot;</value>
+                  <value>&quot;Education,Entertainment&quot;</value>
+                  <value>&quot;Educational&quot;</value>
+                  <value>&quot;Entertainment,Books &amp; Reference&quot;</value>
+                  <value>&quot;Libraries &amp; Demo&quot;</value>
+                  <value>&quot;News &amp; Magazines&quot;</value>
+                </bin>
+                <bin default-name='false' value='&quot;Games&quot;'>
+                  <value>&quot;Action&quot;</value>
+                  <value>&quot;Adventure&quot;</value>
+                  <value>&quot;Arcade&quot;</value>
+                  <value>&quot;Board&quot;</value>
+                  <value>&quot;Card&quot;</value>
+                  <value>&quot;Casino&quot;</value>
+                  <value>&quot;Puzzle&quot;</value>
+                  <value>&quot;Puzzle,Travel &amp; Local&quot;</value>
+                  <value>&quot;Racing&quot;</value>
+                  <value>&quot;Role Playing&quot;</value>
+                  <value>&quot;Simulation&quot;</value>
+                  <value>&quot;Sports&quot;</value>
+                  <value>&quot;Strategy&quot;</value>
+                  <value>&quot;Trivia&quot;</value>
+                  <value>&quot;Word&quot;</value>
+                </bin>
+                <bin default-name='false' value='&quot;Lifestyle&quot;'>
+                  <value>&quot;Beauty&quot;</value>
+                  <value>&quot;Casual&quot;</value>
+                  <value>&quot;Dating&quot;</value>
+                  <value>&quot;Entertainment&quot;</value>
+                  <value>&quot;Events&quot;</value>
+                  <value>&quot;Food &amp; Drink&quot;</value>
+                  <value>&quot;Food &amp; Drink,Art &amp; Design&quot;</value>
+                  <value>&quot;Food &amp; Drink,Puzzle&quot;</value>
+                  <value>&quot;Health &amp; Fitness&quot;</value>
+                  <value>&quot;House &amp; Home&quot;</value>
+                  <value>&quot;Lifestyle&quot;</value>
+                  <value>&quot;Lifestyle,Music &amp; Audio&quot;</value>
+                  <value>&quot;Medical&quot;</value>
+                  <value>&quot;Parenting&quot;</value>
+                  <value>&quot;Personalization&quot;</value>
+                  <value>&quot;Shopping&quot;</value>
+                  <value>&quot;Social&quot;</value>
+                  <value>&quot;Social,Music &amp; Audio&quot;</value>
+                  <value>&quot;Weather&quot;</value>
+                </bin>
+                <bin default-name='false' value='&quot;Tools&quot;'>
+                  <value>&quot;Art &amp; Design&quot;</value>
+                  <value>&quot;Communication&quot;</value>
+                  <value>&quot;Communication,Maps &amp; Navigation&quot;</value>
+                  <value>&quot;Music&quot;</value>
+                  <value>&quot;Music &amp; Audio&quot;</value>
+                  <value>&quot;Photography&quot;</value>
+                  <value>&quot;Productivity&quot;</value>
+                  <value>&quot;Productivity,Lifestyle&quot;</value>
+                  <value>&quot;Tools&quot;</value>
+                  <value>&quot;Tools,Education&quot;</value>
+                  <value>&quot;Video Players &amp; Editors&quot;</value>
+                </bin>
+                <bin default-name='false' value='&quot;Vehicles &amp; Travels&quot;'>
+                  <value>&quot;Auto &amp; Vehicles&quot;</value>
+                  <value>&quot;Maps &amp; Navigation&quot;</value>
+                  <value>&quot;Travel &amp; Local&quot;</value>
+                </bin>
+              </calculation>
+            </column>
+            <column datatype='string' name='[Category]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[F1]' role='dimension' type='ordinal' />
+            <column datatype='date' name='[Released]' role='dimension' type='ordinal' />
+            <column-instance column='[F1]' derivation='Count' name='[cnt:F1:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Released]' derivation='Year-Trunc' name='[tyr:Released:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Released]' derivation='Year' name='[yr:Released:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.17xda7j1i2eocc1bm64121mp5hxx].[Category (group)]' context='true' filter-group='4'>
+            <groupfilter function='member' level='[Category (group)]' member='&quot;Business &amp; Finance&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.17xda7j1i2eocc1bm64121mp5hxx].[yr:Released:ok]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[yr:Released:ok]' />
+              <groupfilter function='union'>
+                <groupfilter function='member' level='[yr:Released:ok]' member='2010' />
+                <groupfilter function='member' level='[yr:Released:ok]' member='2021' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.17xda7j1i2eocc1bm64121mp5hxx].[Category (group)]</column>
+            <column>[federated.17xda7j1i2eocc1bm64121mp5hxx].[yr:Released:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.17xda7j1i2eocc1bm64121mp5hxx].[tyr:Released:qk]' scope='cols' value='' />
+            <format attr='title' class='0' field='[federated.17xda7j1i2eocc1bm64121mp5hxx].[cnt:F1:qk]' scope='rows' value='No. of Apps Released' />
+            <format attr='stroke-size' value='1' />
+            <format attr='line-visibility' value='on' />
+            <format attr='line-pattern-only' value='solid' />
+            <format attr='stroke-color' value='#555555' />
+            <format attr='tick-color' value='#555555' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#f9b342' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-weight' value='bold' />
+            <format attr='color' value='#555555' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='line-pattern-only' value='solid' />
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='legend-title'>
+            <format attr='font-size' value='12' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.17xda7j1i2eocc1bm64121mp5hxx].[Category (group)]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Year:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.17xda7j1i2eocc1bm64121mp5hxx].[tyr:Released:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>No. of Apps:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.17xda7j1i2eocc1bm64121mp5hxx].[cnt:F1:qk]>]]></run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.17xda7j1i2eocc1bm64121mp5hxx].[cnt:F1:qk]</rows>
+        <cols>[federated.17xda7j1i2eocc1bm64121mp5hxx].[tyr:Released:qk]</cols>
+      </table>
+      <simple-id uuid='{FE84D818-2985-44B8-8B98-49037617D7FA}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Category Dashboard'>
+      <style>
+        <style-rule element='dash-text'>
+          <format attr='text-orientation' id='dash-text_54' value='-90' />
+        </style-rule>
+      </style>
+      <size maxheight='720' maxwidth='1300' minheight='720' minwidth='1300' sizing-mode='fixed' />
+      <datasources>
+        <datasource caption='GooglePlaystore2' name='federated.17xda7j1i2eocc1bm64121mp5hxx' />
+      </datasources>
+      <datasource-dependencies datasource='federated.17xda7j1i2eocc1bm64121mp5hxx'>
+        <column datatype='string' name='[Category (group)]' role='dimension' type='nominal'>
+          <calculation class='categorical-bin' column='[Category]' new-bin='true'>
+            <bin default-name='true' value='&quot;Business &amp; Finance&quot;'>
+              <value>&quot;Business&quot;</value>
+              <value>&quot;Finance&quot;</value>
+            </bin>
+            <bin default-name='false' value='&quot;Education&quot;'>
+              <value>&quot;Books &amp; Reference&quot;</value>
+              <value>&quot;Books &amp; Reference,Entertainment&quot;</value>
+              <value>&quot;Books &amp; Reference,Libraries &amp; Demo&quot;</value>
+              <value>&quot;Comics&quot;</value>
+              <value>&quot;Education&quot;</value>
+              <value>&quot;Education,Books &amp; Reference&quot;</value>
+              <value>&quot;Education,Entertainment&quot;</value>
+              <value>&quot;Educational&quot;</value>
+              <value>&quot;Entertainment,Books &amp; Reference&quot;</value>
+              <value>&quot;Libraries &amp; Demo&quot;</value>
+              <value>&quot;News &amp; Magazines&quot;</value>
+            </bin>
+            <bin default-name='false' value='&quot;Games&quot;'>
+              <value>&quot;Action&quot;</value>
+              <value>&quot;Adventure&quot;</value>
+              <value>&quot;Arcade&quot;</value>
+              <value>&quot;Board&quot;</value>
+              <value>&quot;Card&quot;</value>
+              <value>&quot;Casino&quot;</value>
+              <value>&quot;Puzzle&quot;</value>
+              <value>&quot;Puzzle,Travel &amp; Local&quot;</value>
+              <value>&quot;Racing&quot;</value>
+              <value>&quot;Role Playing&quot;</value>
+              <value>&quot;Simulation&quot;</value>
+              <value>&quot;Sports&quot;</value>
+              <value>&quot;Strategy&quot;</value>
+              <value>&quot;Trivia&quot;</value>
+              <value>&quot;Word&quot;</value>
+            </bin>
+            <bin default-name='false' value='&quot;Lifestyle&quot;'>
+              <value>&quot;Beauty&quot;</value>
+              <value>&quot;Casual&quot;</value>
+              <value>&quot;Dating&quot;</value>
+              <value>&quot;Entertainment&quot;</value>
+              <value>&quot;Events&quot;</value>
+              <value>&quot;Food &amp; Drink&quot;</value>
+              <value>&quot;Food &amp; Drink,Art &amp; Design&quot;</value>
+              <value>&quot;Food &amp; Drink,Puzzle&quot;</value>
+              <value>&quot;Health &amp; Fitness&quot;</value>
+              <value>&quot;House &amp; Home&quot;</value>
+              <value>&quot;Lifestyle&quot;</value>
+              <value>&quot;Lifestyle,Music &amp; Audio&quot;</value>
+              <value>&quot;Medical&quot;</value>
+              <value>&quot;Parenting&quot;</value>
+              <value>&quot;Personalization&quot;</value>
+              <value>&quot;Shopping&quot;</value>
+              <value>&quot;Social&quot;</value>
+              <value>&quot;Social,Music &amp; Audio&quot;</value>
+              <value>&quot;Weather&quot;</value>
+            </bin>
+            <bin default-name='false' value='&quot;Tools&quot;'>
+              <value>&quot;Art &amp; Design&quot;</value>
+              <value>&quot;Communication&quot;</value>
+              <value>&quot;Communication,Maps &amp; Navigation&quot;</value>
+              <value>&quot;Music&quot;</value>
+              <value>&quot;Music &amp; Audio&quot;</value>
+              <value>&quot;Photography&quot;</value>
+              <value>&quot;Productivity&quot;</value>
+              <value>&quot;Productivity,Lifestyle&quot;</value>
+              <value>&quot;Tools&quot;</value>
+              <value>&quot;Tools,Education&quot;</value>
+              <value>&quot;Video Players &amp; Editors&quot;</value>
+            </bin>
+            <bin default-name='false' value='&quot;Vehicles &amp; Travels&quot;'>
+              <value>&quot;Auto &amp; Vehicles&quot;</value>
+              <value>&quot;Maps &amp; Navigation&quot;</value>
+              <value>&quot;Travel &amp; Local&quot;</value>
+            </bin>
+          </calculation>
+        </column>
+        <column datatype='string' name='[Category]' role='dimension' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='39' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='97778' id='42' param='horz' type-v2='layout-flow' w='98770' x='615' y='1111'>
+            <zone h='97778' id='40' type-v2='layout-basic' w='86462' x='615' y='1111' />
+            <zone fixed-size='160' h='97778' id='41' is-fixed='true' param='vert' type-v2='layout-flow' w='12308' x='87077' y='1111'>
+              <zone h='7222' id='43' type-v2='text' w='12308' x='87077' y='1111'>
+                <formatted-text>
+                  <run fontcolor='#555555' fontname='Tableau Bold' fontsize='12'>Price Distribution of Paid Apps</run>
+                </formatted-text>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='100000' id='13' type-v2='empty' w='100000' x='0' y='0'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='background-color' value='#ffd675' />
+          </zone-style>
+        </zone>
+        <zone h='7083' id='12' name='No. of Free apps KPI' show-title='false' w='15769' x='52615' y='1389' />
+        <zone h='3889' id='14' name='No. of Editor Choice apps KPI' show-title='false' w='7692' x='78385' y='2500' />
+        <zone h='44722' id='20' type-v2='empty' w='47769' x='1231' y='54028'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='background-color' value='#ffffff' />
+          </zone-style>
+        </zone>
+        <zone h='43472' id='15' name='Yearly number of apps released across different category' show-title='false' w='47077' x='1615' y='54722' />
+        <zone h='44722' id='17' name='Top 10 most installed by each category' show-title='false' w='47769' x='51000' y='54028' />
+        <zone h='41111' id='50' type-v2='empty' w='32308' x='33231' y='9444'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='background-color' value='#ffffff' />
+          </zone-style>
+        </zone>
+        <zone h='39583' id='18' name='Content Type (no. of apps) pie chart' show-title='false' w='31462' x='33692' y='10278' />
+        <zone h='11806' id='19' name='Content Type (no. of apps) pie chart' pane-specification-id='0' param='[federated.17xda7j1i2eocc1bm64121mp5hxx].[Content Rating (group)]' show-title='false' type-v2='color' w='8308' x='56923' y='10556' />
+        <zone h='40972' id='49' type-v2='empty' w='32077' x='615' y='9583'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='background-color' value='#ffffff' />
+          </zone-style>
+        </zone>
+        <zone h='39583' id='23' name='Price Distribution' show-title='false' w='31231' x='1000' y='10278' />
+        <zone h='40972' id='51' type-v2='empty' w='33077' x='66077' y='9444'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='background-color' value='#ffffff' />
+          </zone-style>
+        </zone>
+        <zone h='39583' id='24' name='Size Distribution' show-title='false' w='32231' x='66462' y='10278' />
+        <zone h='8750' id='25' mode='dropdown' name='Top 10 most installed by each category' param='[federated.17xda7j1i2eocc1bm64121mp5hxx].[Category (group)]' show-all='false' type-v2='filter' values='database' w='13308' x='86615' y='0' />
+        <zone h='11940' id='26' name=' Category Name' show-title='false' w='33833' x='16833' y='-1045' />
+        <zone forceUpdate='true' h='9104' id='29' type-v2='text' w='17500' x='0' y='0'>
+          <formatted-text>
+            <run bold='true' fontcolor='#000000' fontsize='32'>Category:</run>
+          </formatted-text>
+        </zone>
+        <zone forceUpdate='true' h='4583' id='30' type-v2='text' w='10000' x='68692' y='1528'>
+          <formatted-text>
+            <run bold='true' fontcolor='#1b1b1b' fontname='Tableau Bold' fontsize='12'>Editor&apos;s Choice -</run>
+          </formatted-text>
+        </zone>
+        <zone forceUpdate='true' h='4167' id='44' type-v2='text' w='21923' x='6308' y='10139'>
+          <formatted-text>
+            <run fontcolor='#333333' fontname='Tableau Bold' fontsize='12'>Price Distribution of Paid Apps (in $)</run>
+          </formatted-text>
+        </zone>
+        <zone forceUpdate='true' h='4167' id='45' type-v2='text' w='19077' x='75000' y='10000'>
+          <formatted-text>
+            <run fontcolor='#1b1b1b' fontname='Tableau Bold' fontsize='12'>Size Distribution of Apps (in mb)</run>
+          </formatted-text>
+        </zone>
+        <zone forceUpdate='true' h='4167' id='48' type-v2='text' w='8154' x='45615' y='9861'>
+          <formatted-text>
+            <run fontcolor='#333333' fontname='Tableau Bold' fontsize='12'>Content Type </run>
+          </formatted-text>
+        </zone>
+        <zone forceUpdate='true' h='4167' id='55' type-v2='text' w='16846' x='68769' y='50278'>
+          <formatted-text>
+            <run fontcolor='#333333' fontname='Tableau Bold' fontsize='12'>Top 10 Most Installed Apps</run>
+          </formatted-text>
+        </zone>
+        <zone h='4444' id='56' type-v2='text' w='14077' x='18462' y='50278'>
+          <formatted-text>
+            <run fontcolor='#333333' fontname='Tableau Bold' fontsize='12'>Apps Released per Year</run>
+          </formatted-text>
+        </zone>
+        <zone h='6944' id='57' type-v2='empty' w='231' x='50769' y='1250'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='background-color' value='#1b1b1b' />
+          </zone-style>
+        </zone>
+        <zone h='10000' id='58' type-v2='empty' w='86077' x='77' y='417' />
+        <zone h='5417' id='59' type-v2='empty' w='54231' x='1769' y='8750' />
+        <zone h='5139' id='60' type-v2='empty' w='25923' x='71692' y='9167' />
+        <zone h='3750' id='71' type-v2='empty' w='16846' x='83231' y='0' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='2300' minheight='2300' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='85' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97778' id='84' param='vert' type-v2='layout-flow' w='98770' x='615' y='1111'>
+                <zone fixed-size='86' h='11940' id='26' is-fixed='true' name=' Category Name' show-title='false' w='33833' x='16833' y='-1045'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='9104' id='29' type-v2='text' w='17500' x='0' y='0'>
+                  <formatted-text>
+                    <run bold='true' fontcolor='#000000' fontsize='32'>Category:</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='7222' id='43' type-v2='text' w='12308' x='87077' y='1111'>
+                  <formatted-text>
+                    <run fontcolor='#555555' fontname='Tableau Bold' fontsize='12'>Price Distribution of Paid Apps</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='51' h='7083' id='12' is-fixed='true' name='No. of Free apps KPI' show-title='false' w='15769' x='52615' y='1389'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='4583' id='30' type-v2='text' w='10000' x='68692' y='1528'>
+                  <formatted-text>
+                    <run bold='true' fontcolor='#1b1b1b' fontname='Tableau Bold' fontsize='12'>Editor&apos;s Choice -</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='28' h='3889' id='14' is-fixed='true' name='No. of Editor Choice apps KPI' show-title='false' w='7692' x='78385' y='2500'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='4167' id='48' type-v2='text' w='8154' x='45615' y='9861'>
+                  <formatted-text>
+                    <run fontcolor='#333333' fontname='Tableau Bold' fontsize='12'>Content Type </run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='4167' id='45' type-v2='text' w='19077' x='75000' y='10000'>
+                  <formatted-text>
+                    <run fontcolor='#1b1b1b' fontname='Tableau Bold' fontsize='12'>Size Distribution of Apps (in mb)</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='4167' id='44' type-v2='text' w='21923' x='6308' y='10139'>
+                  <formatted-text>
+                    <run fontcolor='#333333' fontname='Tableau Bold' fontsize='12'>Price Distribution of Paid Apps (in $)</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='39583' id='23' is-fixed='true' name='Price Distribution' show-title='false' w='31231' x='1000' y='10278'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='39583' id='18' is-fixed='true' name='Content Type (no. of apps) pie chart' show-title='false' w='31462' x='33692' y='10278'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='11806' id='19' name='Content Type (no. of apps) pie chart' pane-specification-id='0' param='[federated.17xda7j1i2eocc1bm64121mp5hxx].[Content Rating (group)]' show-title='false' type-v2='color' w='8308' x='56923' y='10556'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='39583' id='24' is-fixed='true' name='Size Distribution' show-title='false' w='32231' x='66462' y='10278'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='4444' id='56' type-v2='text' w='14077' x='18462' y='50278'>
+                  <formatted-text>
+                    <run fontcolor='#333333' fontname='Tableau Bold' fontsize='12'>Apps Released per Year</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='4167' id='55' type-v2='text' w='16846' x='68769' y='50278'>
+                  <formatted-text>
+                    <run fontcolor='#333333' fontname='Tableau Bold' fontsize='12'>Top 10 Most Installed Apps</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='8750' id='25' mode='dropdown' name='Top 10 most installed by each category' param='[federated.17xda7j1i2eocc1bm64121mp5hxx].[Category (group)]' show-all='false' type-v2='filter' values='database' w='13308' x='86615' y='0'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='44722' id='17' is-fixed='true' name='Top 10 most installed by each category' show-title='false' w='47769' x='51000' y='54028'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='43472' id='15' is-fixed='true' name='Yearly number of apps released across different category' show-title='false' w='47077' x='1615' y='54722'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{074FEEF3-9880-4A22-B25E-237A2879F3D0}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='dashboard' maximized='true' name='Category Dashboard'>
+      <viewpoints>
+        <viewpoint name=' Category Name'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Content Type (no. of apps) pie chart'>
+          <zoom type='entire-view' />
+          <highlight field='[federated.17xda7j1i2eocc1bm64121mp5hxx].[Content Rating (group)]'>
+            <bucket-selection />
+          </highlight>
+        </viewpoint>
+        <viewpoint name='No. of Editor Choice apps KPI' />
+        <viewpoint name='No. of Free apps KPI' />
+        <viewpoint name='Price Distribution'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Size Distribution'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Top 10 most installed by each category'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Yearly number of apps released across different category'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='15' />
+      <simple-id uuid='{0670B587-41FD-4658-AF40-856F2B1646DE}' />
+    </window>
+    <window class='worksheet' hidden='true' name=' Category Name'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{61E51E57-AF83-4B14-81FB-FB8293D888CC}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Content Type (no. of apps) pie chart'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.17xda7j1i2eocc1bm64121mp5hxx].[Content Rating (group)]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight field='[federated.17xda7j1i2eocc1bm64121mp5hxx].[Content Rating (group)]'>
+          <bucket-selection />
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{0FB2C7FC-930E-49DB-88BC-0C992CE5C000}' />
+    </window>
+    <window class='worksheet' hidden='true' name='No. of Editor Choice apps KPI'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.17xda7j1i2eocc1bm64121mp5hxx].[Category (group)]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{0D0F1096-810A-4BD0-863B-7A3F3BF6265F}' />
+    </window>
+    <window class='worksheet' hidden='true' name='No. of Free apps KPI'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <selection-collection>
+          <node-selection select-tuples='false'>
+            <oriented-node-reference orientation='vertical'>
+              <node-reference>
+                <fields>
+                  <field>[federated.17xda7j1i2eocc1bm64121mp5hxx].[none:Free:nk]</field>
+                </fields>
+                <multibucket>
+                  <bucket>true</bucket>
+                </multibucket>
+              </node-reference>
+              <page-reference />
+            </oriented-node-reference>
+          </node-selection>
+        </selection-collection>
+      </viewpoint>
+      <simple-id uuid='{4253EA05-E5B7-4FB8-AD51-30E4CDBA1E88}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Price Distribution'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-width' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.17xda7j1i2eocc1bm64121mp5hxx].[none:Calculation_1065664303103238144:nk]</field>
+            <field>[federated.17xda7j1i2eocc1bm64121mp5hxx].[none:F1:ok]</field>
+          </color-one-way>
+        </highlight>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{B6E62EEC-65D3-4D5A-B5E0-83437E105378}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Size Distribution'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <floating-toolbar-visibility value='2' />
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{7D1BF784-398F-4F5F-8506-3D86EC79C43F}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Top 10 most installed by each category'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card size='31' type='pages' />
+            <card size='47' type='filters' />
+            <card size='187' type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='radiolist' param='[federated.17xda7j1i2eocc1bm64121mp5hxx].[Category (group)]' show-all='false' type='filter' />
+            <card pane-specification-id='0' param='[federated.17xda7j1i2eocc1bm64121mp5hxx].[sum:Maximum Installs:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{AC635EB6-34E1-4756-B0CB-F715D01F121B}' />
+    </window>
+    <window class='worksheet' hidden='true' name='Yearly number of apps released across different category'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.17xda7j1i2eocc1bm64121mp5hxx].[Category (group)]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{9563D7F9-C20F-4962-AA83-9F2BB291B440}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Category Dashboard' width='192'>
+      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
+      dZJFqQAAAABJRU5ErkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>
